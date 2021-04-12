@@ -1,1 +1,26 @@
 <h1>Hello World</h1>
+<!-- Many, but not all, site-wide variables are defined in your site’s configuration.
+However, Hugo provides a number of built-in variables for convenient access to global values in your templates. -->
+
+{{/* Go Template variables and functions are accessible within {{ }}. */}}
+{{/* Each Go Template gets a data object. In Hugo, each template is passed a Page. */}}
+
+<h1>Page Variables</h1>
+
+{{/* With the Page being the default scope of a template, the Title element in current scope (. – “the dot") is
+accessible simply by the dot-prefix (.Title): */}}
+<div>{{ .Page.Title }}</div>
+<div>{{ .Page.Dir }}</div>
+<div>{{ .Page.IsHome }}</div>
+<div>{{ .Page.Kind }}</div>
+
+<h1>Site Variables</h1>
+<div>{{.Site.AllPages}}</div>
+<div>{{.Site.Author}}</div>
+<div>{{.Site.BaseURL}}</div>
+<div>{{.Site.Copyright}}</div>
+
+{{ $address := "123 Main St." }}
+{{ $address }}
+
+{{ add 1 2 }}
