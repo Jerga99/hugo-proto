@@ -1,5 +1,6 @@
 ---
 title: "My First Blog"
+content: "new content hello there guys"
 date: 2021-04-22T09:24:38+01:00
 draft: false
 ---
