@@ -1,5 +1,5 @@
-<!-- if content/blogs exist then page will be displayed! -->
-
+{{/* if content/blogs exist then page will be displayed! */}}
+{{ define "main" }}
 <section id="main">
   <h1 id="title">{{ .Title }}</h1>
   <div>
@@ -15,3 +15,4 @@
       <h5 id="wordcount"> {{ .WordCount }} Words </h5>
     </section>
 </aside>
+{{end}}
