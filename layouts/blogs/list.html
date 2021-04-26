@@ -1,5 +1,6 @@
 {{ define "main" }}
-{{ range .Pages}}
-<p>{{ .Title }}</p>
-{{ end }}
+	{{.Type}}
+	{{ range .Pages}}
+		<p>{{ .Title }}</p>
+	{{ end }}
 {{ end }}

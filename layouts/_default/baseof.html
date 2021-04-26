@@ -13,7 +13,7 @@ lookup order. -->
 </head>
 
 <body>
-  <h1>Base Of!</h1>
+  {{ partial "navbar/nav-menu" . }}
   <main role="main">
     {{ block "main" . }}
     {{ end }}

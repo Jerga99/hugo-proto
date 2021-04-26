@@ -1,0 +1,5 @@
+{{ range .Site.Menus.main }}
+  <div class="navbar__menu">
+    <a href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>
+  </div>
+{{end}}
