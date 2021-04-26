@@ -5,8 +5,8 @@ lookup order. -->
 
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-
-
+    {{ $bulma := resources.Get "/css/bulma.min.css"}}
+    <link rel="stylesheet" href="{{$bulma.Permalink}}">
 <head>
 
 </head>
