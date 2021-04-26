@@ -1,1 +1,5 @@
-<h1>More specific list page</h1>
+{{ define "main" }}
+{{ range .Pages}}
+<p>{{ .Title }}</p>
+{{ end }}
+{{ end }}
