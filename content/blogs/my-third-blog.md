@@ -3,6 +3,7 @@ title: "My Third Blog Title"
 subtitle: "My Third Blog Subtitle"
 content: "new content hello there guys"
 date: 2021-04-22T09:24:38+01:00
+image: images/gatsby.jpg
 draft: false
 ---
 

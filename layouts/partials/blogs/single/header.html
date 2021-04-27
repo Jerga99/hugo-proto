@@ -15,10 +15,11 @@
       </div>
     </div>
   </div>
-  <h1 class="font-weight-bold blog-detail-header-title mb-0">Some Title</h1>
-  <h2 class="blog-detail-header-subtitle font-weight-bold m-b-sm">Some Subtitle</h2>
+  <h1 class="font-weight-bold blog-detail-header-title mb-0">{{$.Param "title"}}</h1>
+  <h2 class="blog-detail-header-subtitle font-weight-bold m-b-sm">{{$.Param "subtitle"}}</h2>
+    {{ $imgSrc := $.Param "image" }}
     <img
       class="img-fluid rounded"
-      src="" alt="TODO: provide alt"
+      src="{{ $imgSrc | relURL }}" alt="TODO: provide alt"
     />
 </div>
