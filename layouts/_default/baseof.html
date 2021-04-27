@@ -11,17 +11,14 @@ lookup order. -->
 
 
   {{ $main_options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
+  {{ $main_template := resources.Get "sass/main.scss" }}
+  {{ $main_style := $main_template | resources.ToCSS $main_options | resources.Minify }}
+  <link rel="stylesheet" href="{{ $main_style.Permalink }}">
 
-
-  {{ $kokos := "Jumbo"}}
 </head>
 
 <body>
-  {{ $trolo := dict "a" 200}}
-  I: {{ $trolo.a }}
-  {{ $trolo := dict "a" 200}}
-  I: {{ index $trolo.a }}
-  {{ $main_options.targetPath }}
+  {{ $main_template }}
   {{ partial "navbar/nav-menu" . }}
   <main role="main">
     {{ block "main" . }}
