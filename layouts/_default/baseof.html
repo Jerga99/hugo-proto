@@ -5,13 +5,23 @@ lookup order. -->
 
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-    {{ $bulma := resources.Get "/css/bulma.min.css"}}
-    <link rel="stylesheet" href="{{$bulma.Permalink}}">
 <head>
+  {{ $bulma := resources.Get "/css/bulma.min.css"}}
+  <link rel="stylesheet" href="{{$bulma.Permalink}}">
 
+
+  {{ $main_options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
+
+
+  {{ $kokos := "Jumbo"}}
 </head>
 
 <body>
+  {{ $trolo := dict "a" 200}}
+  I: {{ $trolo.a }}
+  {{ $trolo := dict "a" 200}}
+  I: {{ index $trolo.a }}
+  {{ $main_options.targetPath }}
   {{ partial "navbar/nav-menu" . }}
   <main role="main">
     {{ block "main" . }}
