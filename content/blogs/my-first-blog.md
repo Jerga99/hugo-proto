@@ -69,25 +69,26 @@ Did I use the term “web page”? Yes, Electron is built on top of the same sou
 Again, let’s code a simple browser window, and then we will get into an explanation.
 
 Open `main.js` file, and type the following code:
+{{< highlight js >}}
+const { BrowserWindow, app } = require('electron');
 
-    const { BrowserWindow, app } = require('electron');
-
-    function createWindow() {
-      const win = new BrowserWindow({
-        width: 1200,
-        height: 800,
-        backgroundColor: "white",
-        webPreferences: {
-          nodeIntegration: false,
-          worldSafeExecuteJavaScript: true,
-          contextIsolation: true
-        }
-      })
-
-      win.loadFile('index.html')
+function createWindow() {
+  const win = new BrowserWindow({
+    width: 1200,
+    height: 800,
+    backgroundColor: "white",
+    webPreferences: {
+      nodeIntegration: false,
+      worldSafeExecuteJavaScript: true,
+      contextIsolation: true
     }
+  })
 
-    app.whenReady().then(createWindow);main.js
+  win.loadFile('index.html')
+}
+
+app.whenReady().then(createWindow);
+{{< /highlight >}}
 
 Function `createWindow` will create browser window 1200x800px with white background.
 
