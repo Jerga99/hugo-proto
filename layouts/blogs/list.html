@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<div class="columns is-multiline">
-		<div class="column is-8 ">
+		<div class="column is-8">
 			{{ range .Pages }}
 				<div class="columns">
 					<div class="column">
@@ -20,7 +20,7 @@
 				</div>
 			{{ end }}
 		</div>
-		<div>
+		<div class="column is-2 is-offset-2">
 			{{ partial "taxonomies/all-taxonomies" .}}
 		</div>
 	</div>

@@ -5,20 +5,15 @@
       <!-- Term: {{ (printf "/%s" $taxonomy_term) }} -->
       <!-- Get a page of given type -->
       {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
-        <li><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
-          <ul>
-            {{ range $key, $value := $taxonomy }}
-              <li>KEY:{{ $key }}</li>
-              <ul>
-                {{ range $value.Pages }}
-                  <li hugo-nav="{{ .RelPermalink}}">
-                    <a href="{{ .Permalink}}">{{ .Title }}</a>
-                  </li>
-                {{ end }}
-              </ul>
-            {{ end }}
-          </ul>
-        </li>
+        <div class="tag is-large">
+          <a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+        </div>
+        {{ range $key, $value := $taxonomy }}
+          <div>
+            {{$url := absURL (printf "%s/%s" $taxonomy_term $key)}}
+            <a class="button is-text" href="{{$url}}">{{$key | humanize}}</a>
+          </div>
+        {{ end }}
       {{ end }}
     {{ end }}
   </ul>
