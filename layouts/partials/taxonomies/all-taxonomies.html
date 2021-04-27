@@ -1,10 +1,25 @@
 <section>
-
   <!-- {{printf "%#v" .Site.Taxonomies}} -->
   <ul id="all-taxonomies">
     {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
-      -----{{$taxonomy_term}}----
-      {{$taxonomy}}
+      <!-- Term: {{ (printf "/%s" $taxonomy_term) }} -->
+      <!-- Get a page of given type -->
+      {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+        <li><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+          <ul>
+            {{ range $key, $value := $taxonomy }}
+              <li>KEY:{{ $key }}</li>
+              <ul>
+                {{ range $value.Pages }}
+                  <li hugo-nav="{{ .RelPermalink}}">
+                    <a href="{{ .Permalink}}">{{ .Title }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </ul>
+        </li>
+      {{ end }}
     {{ end }}
   </ul>
 </section>
