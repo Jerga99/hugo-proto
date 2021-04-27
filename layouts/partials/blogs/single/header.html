@@ -2,21 +2,22 @@
   <div class="is-flex is-flex-direction-row is-justify-content-space-between mb-2">
     <div class="is-flex">
       <div>
-        <img
-          src=""
-          class="is-rounded m-r-sm"
-          height="50px"
-          width="50px"
-          alt="avatar"/>
+        {{ $authorSrc := $.Param "author.image" }}
+        <figure class="image is-64x64 mr-2">
+          <img
+            src="{{ $authorSrc | relURL }}"
+            class="is-rounded"
+            alt="avatar"/>
+        </figure>
       </div>
       <div class="is-flex is-flex-direction-column is-justify-content-center">
-        <div class="blog-author">Filip Jerga</div>
-        <div class="blog-date">27-12-90</div>
+        <div class="blog-author">{{$.Param "author.name"}}</div>
+        <div class="blog-date">{{ dateFormat "Monday, Jan 2, 2006" ($.Param "date") }}</div>
       </div>
     </div>
   </div>
   <h1 class="font-weight-bold blog-detail-header-title mb-0">{{$.Param "title"}}</h1>
-  <h2 class="blog-detail-header-subtitle font-weight-bold m-b-sm">{{$.Param "subtitle"}}</h2>
+  <h2 class="blog-detail-header-subtitle font-weight-bold mb-5">{{$.Param "subtitle"}}</h2>
     {{ $imgSrc := $.Param "image" }}
     <img
       class="img-fluid rounded"
