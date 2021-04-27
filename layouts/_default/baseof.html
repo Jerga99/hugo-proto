@@ -4,20 +4,18 @@ rendered unless you specify another *baseof.html closer to the beginning of the
 lookup order. -->
 
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-<head>
-  {{ partial "head/styles" . }}
-</head>
+  <html lang="{{ .Site.Language.Lang }}">
+  <head>
+    {{ partial "head/styles" . }}
+  </head>
 
-<body>
-  <div class="container is-max-desktop">
-    {{ partial "navbar/nav-menu" . }}
-    <main role="main">
-      {{ block "main" . }}
-      {{ end }}
-    </main>
-    {{.Site.Params.customParam}}
-  </div>
-</body>
-
+  <body>
+    <div class="container is-max-desktop">
+      {{ partial "navbar/nav-menu" . }}
+      <main role="main" class="mt-6">
+        {{ block "main" . }}
+        {{ end }}
+      </main>
+    </div>
+  </body>
 </html>
