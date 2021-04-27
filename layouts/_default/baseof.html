@@ -10,12 +10,14 @@ lookup order. -->
 </head>
 
 <body>
-  {{ partial "navbar/nav-menu" . }}
-  <main role="main">
-    {{ block "main" . }}
-    {{ end }}
-  </main>
-  {{.Site.Params.customParam}}
+  <div class="container is-max-desktop">
+    {{ partial "navbar/nav-menu" . }}
+    <main role="main">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    {{.Site.Params.customParam}}
+  </div>
 </body>
 
 </html>
