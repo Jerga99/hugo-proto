@@ -17,6 +17,11 @@ accessible simply by the dot-prefix (.Title): */}}
 
 <h1>Site Variables</h1>
 <div>{{.Site.AllPages}}</div>
+{{ range .Site.AllPages}}
+  <div>
+    <a href="{{.Permalink}}">{{.Permalink}}</a>
+  </div>
+{{end}}
 <div>{{.Site.Author}}</div>
 <div>{{.Site.BaseURL}}</div>
 <div>{{.Site.Copyright}}</div>
