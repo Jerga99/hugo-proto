@@ -7,6 +7,15 @@ image: images/gatsby.jpg
 author:
   name: "Filip Jerga"
   image: "images/filip.jpg"
+tags:
+- js
+- gatsby
+- development
+- programming
+categories:
+- web development
+series:
+- JAMStack
 draft: false
 ---
 

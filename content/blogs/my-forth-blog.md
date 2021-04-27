@@ -8,6 +8,14 @@ author:
   name: "Filip Jerga"
   image: "images/filip.jpg"
 draft: false
+tags:
+- swift
+- development
+- programming
+categories:
+- mobile development
+series:
+- how to implement this
 ---
 
 command: hugo new posts/my-first-post.md

@@ -8,6 +8,14 @@ author:
   name: "Filip Jerga"
   image: "images/filip.jpg"
 draft: false
+tags:
+- js
+- react
+- programming
+categories:
+- web development
+series:
+- JAMStack
 ---
 
 ## Table of contents:

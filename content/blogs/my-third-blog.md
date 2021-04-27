@@ -8,6 +8,15 @@ author:
   name: "Filip Jerga"
   image: "images/filip.jpg"
 draft: false
+tags:
+- js
+- next
+- development
+- programming
+categories:
+- web development
+series:
+- SSR Frameworks
 ---
 
 command: hugo new posts/my-first-post.md
