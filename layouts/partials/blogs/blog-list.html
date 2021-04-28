@@ -1,7 +1,6 @@
 
 <div class="columns is-multiline">
   {{ $paginator := .Paginate (where .Pages "Type" .Page.Type) }}
-
   <div class="column is-8">
     {{ range $paginator.Pages }}
       <div class="columns">
@@ -10,14 +9,33 @@
         </div>
       </div>
     {{ end }}
-    <!-- Pagers: A list of pagers that can be used to build a pagination menu -->
-    <ul class="pagination">
-      {{ range $paginator.Pagers }}
-        {{ $cur := .PageNumber }}
 
-        <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
-      {{ end }}
-    </ul>
+    {{ $nextUrl := .Page.URL}}
+    {{ $prevUrl := .Page.URL}}
+
+    {{ with $paginator.HasNext}}
+      {{$nextUrl = printf "%spage/%s" $nextUrl (string (add $paginator.PageNumber 1))}}
+    {{ end }}
+
+    {{ with $paginator.HasPrev }}
+      {{$prevUrl = printf "%spage/%s" $prevUrl (string (add $paginator.PageNumber -1))}}
+    {{ end }}
+
+    {{ $currentPage := index $paginator.Pages ($paginator.PageNumber)}}
+
+    <nav class="pagination" role="navigation" aria-label="pagination">
+      <a
+        href="{{$prevUrl}}"
+        class="pagination-previous {{ if not $paginator.HasPrev }}disabled{{ end }}">
+        Previous
+      </a>
+      <a
+        href="{{$nextUrl}}"
+        class="pagination-next {{ if not $paginator.HasNext }}disabled{{ end }}">
+        Next page
+      </a>
+    </nav>
+
   </div>
   <div class="column is-2 is-offset-2">
     {{ partial "taxonomies/all-taxonomies" .}}

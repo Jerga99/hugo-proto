@@ -4,6 +4,9 @@ title = "My New Hugo Site"
 defaultContentLanguage = "en"
 paginate = 1
 
+[params]
+  maxPaginatorCount = 3
+
 [taxonomies]
   category = "categories"
   tag = "tags"
