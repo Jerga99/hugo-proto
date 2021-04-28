@@ -1,4 +1,11 @@
 {{/* if content/blogs exist then page will be displayed! */}}
+{{ $.Scratch.Set "$v" "init" }}
+{{ $v := "init" }}
+{{ if true }}
+  {{ $.Scratch.Set "$v" "changed" }}
+{{ end }}
+v: {{ $.Scratch.Get "$v" }} {{/* => init */}}
+
 {{ define "main" }}
 <div class="blog-detail-page">
   {{ partial "blogs/single/header" . }}
