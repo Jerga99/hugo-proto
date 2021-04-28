@@ -1,4 +1,7 @@
 {{ define "main" }}
+	<span class="tag is-large is-link mb-4">
+		{{ .Page.Title }}
+	</span>
 	{{ partial "blogs/blog-list" . }}
 {{ end }}
 
