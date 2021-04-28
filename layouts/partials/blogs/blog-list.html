@@ -10,6 +10,14 @@
         </div>
       </div>
     {{ end }}
+    <!-- Pagers: A list of pagers that can be used to build a pagination menu -->
+    <ul class="pagination">
+      {{ range $paginator.Pagers }}
+        {{ $cur := .PageNumber }}
+
+        <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+      {{ end }}
+    </ul>
   </div>
   <div class="column is-2 is-offset-2">
     {{ partial "taxonomies/all-taxonomies" .}}

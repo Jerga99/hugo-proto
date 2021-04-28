@@ -2,7 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 defaultContentLanguage = "en"
-paginate = 2
+paginate = 1
 
 [taxonomies]
   category = "categories"
