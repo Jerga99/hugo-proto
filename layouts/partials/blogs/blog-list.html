@@ -1,0 +1,17 @@
+
+<div class="columns is-multiline">
+  <div class="column is-8">
+    {{ range .Pages }}
+      <div class="columns">
+        <div class="column">
+          {{ partial "blogs/blog-item" . }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  <div class="column is-2 is-offset-2">
+    {{ partial "taxonomies/all-taxonomies" .}}
+  </div>
+</div>
+
+

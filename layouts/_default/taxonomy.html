@@ -1,17 +1,3 @@
 {{ define "main" }}
-  <h1>{{.Data.Singular}}</h1>
-  <h1>{{.Data.Plural}}</h1>
-  <h1>{{.Data.Terms}}</h1>
-
-  <h1>In Pages:</h1>
-  {{ range .Data.Pages }}
-    <h1>{{ .Title }}</h1>
-  {{ end }}
-  <!-- You can access taxonomy term here -->
-  <!-- http://localhost:1313/categories/ -->
-  <!-- <ul>
-    {{ range .Data.Terms.Alphabetical }}
-            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-    {{ end }}
-  </ul> -->
+	{{ partial "blogs/blog-list" . }}
 {{ end }}

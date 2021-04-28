@@ -1,28 +1,4 @@
 {{ define "main" }}
-	<div class="columns is-multiline">
-		<div class="column is-8">
-			{{ range .Pages }}
-				<div class="columns">
-					<div class="column">
-						<article class="media">
-							<div class="media-content">
-								<div class="content">
-									<p>
-										<strong>Filip Jerga</strong> <small>@fjerga</small> <small>31m</small>
-									</p>
-								</div>
-							</div>
-						</article>
-						<div class="title">{{ .Param "title" }}</div>
-						<div class="subtitle mb-2">{{ .Param "subtitle" }}</div>
-						<a href="{{.Permalink}}" class="button is-light">Read More</a>
-					</div>
-				</div>
-			{{ end }}
-		</div>
-		<div class="column is-2 is-offset-2">
-			{{ partial "taxonomies/all-taxonomies" .}}
-		</div>
-	</div>
+	{{ partial "blogs/blog-list" . }}
 {{ end }}
 
