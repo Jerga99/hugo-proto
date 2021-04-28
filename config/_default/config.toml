@@ -2,10 +2,10 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 defaultContentLanguage = "en"
-paginate = 1
+paginate = 2
 
 [params]
-  maxPaginatorCount = 3
+  maxPaginatorCount = 2
 
 [taxonomies]
   category = "categories"
