@@ -4,6 +4,7 @@
   {{ partial "blogs/single/header" . }}
 </div>
 <div class="blog-content">
+  {{ .TableOfContents }}
   {{ .Content}}
 </div>
 {{end}}

@@ -4,7 +4,7 @@
     {{ range .Pages }}
       <div class="columns">
         <div class="column">
-          {{ partial "blogs/blog-item" . }}
+          {{ .Render "summary" }}
         </div>
       </div>
     {{ end }}
