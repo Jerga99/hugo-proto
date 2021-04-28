@@ -1,7 +1,9 @@
 
 <div class="columns is-multiline">
+  {{ $paginator := .Paginate (where .Pages "Type" .Page.Type) }}
+
   <div class="column is-8">
-    {{ range .Pages }}
+    {{ range $paginator.Pages }}
       <div class="columns">
         <div class="column">
           {{ .Render "summary" }}
