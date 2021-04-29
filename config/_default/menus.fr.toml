@@ -1,7 +1,7 @@
 [[main]]
   identifier = "blogy"
   name = "Blogy"
-  url = "blogy"
+  url = "blogs"
   weight = 10
 
 [[main]]
@@ -13,5 +13,5 @@
 [[main]]
   identifier = "ONas"
   name = "O Nas"
-  url = "onas"
+  url = "about"
   weight = 8
