@@ -18,7 +18,7 @@ accessible simply by the dot-prefix (.Title): */}}
 <h1>Site Variables</h1>
 <div>{{.Site.AllPages}}</div>
 {{ range .Site.AllPages}}
-  {{ .Kind }}
+  Kind: {{ .Kind }} --- Type {{ .Type }}
   <div>
     <a href="{{.Permalink}}">{{.Permalink}}</a>
   </div>

@@ -11,7 +11,7 @@
 
   {{ $content2 := .Resources.GetMatch "content2.md" }}
   {{ with $content2 }}
-      {{ .Content }}
+      {{- .Content -}}
       {{ .Params.content2 }}
 
   {{ end }}
@@ -20,12 +20,11 @@
   {{ (.Resources.GetMatch "content1.md").Params.content1 }}  */}}
 
   {{ $image2 := ($.Resources.GetMatch "kokos")}}
-  <div>
-    Image BY NAME:
-  </div>
   {{ with $image2 }}
     <img src="{{.RelPermalink}}"/>
-
+    <div>
+      Image BY NAME: {{$image2.Name}}
+    </div>
     {{/*  LALALALAL: {{ $image2.Content | jsonify}}  */}}
     {{/*  {{ $image := .Resources.GetMatch "image.png" }}
     {{ $image }}  */}}

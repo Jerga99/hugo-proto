@@ -7,8 +7,8 @@ en | fr templates
 Archetypes
 seo head
 fix sections and taxonomies
-page bundles
-page resources
+page bundles -> DONE
+page resources -> DONE
 deployment
 page types
 explain more templating and page kinds -> section | home | page | taxonomy | term ....
