@@ -1,0 +1,17 @@
+404
+Themes - Dark | Light
+Shortcodes
+Data Templates
+More about normal templates
+en | fr templates
+Archetypes
+seo head
+fix sections and taxonomies
+page bundles
+page resources
+deployment
+page types
+explain more templating and page kinds -> section | home | page | taxonomy | term ....
+show all properties on . context, iterate over Them
+use jsonify on DICT
+show different data types with printf

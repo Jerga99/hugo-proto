@@ -1,11 +1,3 @@
-{{/* if content/blogs exist then page will be displayed! */}}
-{{ $.Scratch.Set "$v" "init" }}
-{{ $v := "init" }}
-{{ if true }}
-  {{ $.Scratch.Set "$v" "changed" }}
-{{ end }}
-v: {{ $.Scratch.Get "$v" }} {{/* => init */}}
-
 {{ define "main" }}
 <div class="blog-detail-page">
   {{ partial "blogs/single/header" . }}
@@ -13,5 +5,29 @@ v: {{ $.Scratch.Get "$v" }} {{/* => init */}}
 <div class="blog-content">
   {{ .TableOfContents }}
   {{ .Content}}
+  {{/*  {{ .Resources | jsonify (dict "prefix" " " "indent" "  ") }}  */}}
+
+  {{/*  {{/*  {{ (.Resources.GetMatch "content1.md").Content }}  */}}
+
+  {{ $content2 := .Resources.GetMatch "content2.md" }}
+  {{ with $content2 }}
+      {{ .Content }}
+  {{ end }}
+
+  {{/*  {{ (.Resources.GetMatch "content2.md").Params.content2 }}
+  {{ (.Resources.GetMatch "content1.md").Params.content1 }}  */}}
+
+  {{ $image2 := ($.Resources.GetMatch "kokos")}}
+  <div>
+    Image BY NAME:
+  </div>
+  {{ with $image2 }}
+    <img src="{{.RelPermalink}}"/>
+
+    {{/*  LALALALAL: {{ $image2.Content | jsonify}}  */}}
+    {{/*  {{ $image := .Resources.GetMatch "image.png" }}
+    {{ $image }}  */}}
+
+  {{ end }}
 </div>
 {{end}}
