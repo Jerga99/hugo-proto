@@ -12,6 +12,8 @@
   {{ $content2 := .Resources.GetMatch "content2.md" }}
   {{ with $content2 }}
       {{ .Content }}
+      {{ .Params.content2 }}
+
   {{ end }}
 
   {{/*  {{ (.Resources.GetMatch "content2.md").Params.content2 }}
