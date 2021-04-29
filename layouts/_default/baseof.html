@@ -6,6 +6,7 @@ lookup order. -->
 <!DOCTYPE html>
   <html lang="{{ .Site.Language.Lang }}">
   <head>
+    {{ partial "head/meta" . }}
     {{ partial "head/styles" . }}
     {{ with .OutputFormats.Get "rss" -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

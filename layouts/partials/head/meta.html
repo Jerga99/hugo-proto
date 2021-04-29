@@ -1,0 +1,12 @@
+<meta name="description" content="{{ $.Param "description" }}" />
+{{ with $.Params.keywords }}
+  <meta name="keywords" content="{{ delimit $.Params.keywords "," }}">
+{{ end }}
+{{ with $.Params.tags }}
+  <meta name="keywords" content="{{ delimit $.Params.tags "," }}">
+{{ end }}
+
+{{ with $.Param "author" }}
+  <meta name="author" content="{{ $.Param "author.name" }}">
+  <meta property="article:author" content="{{ .Permalink | absLangURL }}@{{ $.Param "author.name" }}">
+{{ end }}

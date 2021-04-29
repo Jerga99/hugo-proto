@@ -6,12 +6,12 @@ More about normal templates
 en | fr templates
 Archetypes
 seo head
-fix sections and taxonomies
+fix sections and taxonomies -> DONE
 page bundles -> DONE
 page resources -> DONE
 deployment
 page types
 explain more templating and page kinds -> section | home | page | taxonomy | term ....
 show all properties on . context, iterate over Them
-use jsonify on DICT
+use jsonify on DICT -> DONE
 show different data types with printf
