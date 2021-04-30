@@ -19,7 +19,7 @@ series:
 draft: false
 ---
 
-{{<kokos filip>}}
+{{<kokos name="Filipooo">}}
   <span>
       Hello World nanan
   </span>

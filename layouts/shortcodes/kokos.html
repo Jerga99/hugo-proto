@@ -7,7 +7,7 @@
   <div class="media-content">
     <div class="content">
       <p>
-        {{ $name:= index .Params 0}}
+        {{ $name:= .Get "name"}}
         <strong> {{$name}}</strong> <small>@{{$name}}</small> <small>31m</small>
         <br>
         {{.Inner}}
