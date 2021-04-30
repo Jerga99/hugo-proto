@@ -1,12 +1,11 @@
 404
 Themes - Dark | Light
 Shortcodes
-Data Templates
-More about normal templates
 
 Archetypes
 deployment
 
+Data Templates -> DONE
 en | fr templates -> DONE
 page types -> DONE
 explain more templating and page kinds -> section | home | page | taxonomy | term .... -> DONE

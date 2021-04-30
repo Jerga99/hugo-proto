@@ -19,6 +19,12 @@ series:
 draft: false
 ---
 
+{{<kokos filip>}}
+  <span>
+      Hello World nanan
+  </span>
+{{</kokos>}}
+
 ## Chapter 0 — Resources
 
 Full Course: [Electron & React JS: Build Native Chat App with Javascript](https://academy.eincode.com/courses/electron-react-js-build-native-chat-app-with-javascript)
