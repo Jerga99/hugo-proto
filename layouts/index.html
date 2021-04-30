@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+<div>DATA: {{.Site.Data.meta.someSupportingInfo }}</div>
+
 {{ range .Site.AllPages}}
   Kind: {{ .Kind }} --- Type {{ .Type }}
   <div>

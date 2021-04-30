@@ -3,11 +3,11 @@ Themes - Dark | Light
 Shortcodes
 Data Templates
 More about normal templates
-en | fr templates
+
 Archetypes
 deployment
 
-
+en | fr templates -> DONE
 page types -> DONE
 explain more templating and page kinds -> section | home | page | taxonomy | term .... -> DONE
 show all properties on . context, iterate over Them -> DONE
