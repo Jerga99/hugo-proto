@@ -1,10 +1,12 @@
-404
+
 Themes - Dark | Light
-Shortcodes
+
 
 Archetypes
 deployment
 
+404 -> DONE
+Shortcodes -> DONE
 Data Templates -> DONE
 en | fr templates -> DONE
 page types -> DONE
