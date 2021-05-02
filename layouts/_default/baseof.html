@@ -15,16 +15,18 @@ lookup order. -->
   </head>
 
   <body>
-    <div class="container is-max-desktop">
-      {{ partial "navbar/nav-menu" . }}
-      <!-- One limitation of the pipes is that they can only work with a single value and that value becomes the last parameter of the next pipeline. -->
-      {{ "au-there" | humanize | len | add 2 | eq 12}}
-      {{eq 12 12}}
-      {{12 | eq 1}}
-      <main role="main" class="mt-6">
-        {{ block "main" . }}
-        {{ end }}
-      </main>
+    <div id="root">
+      <div class="container is-max-desktop">
+        {{ partial "navbar/nav-menu" . }}
+        <!-- One limitation of the pipes is that they can only work with a single value and that value becomes the last parameter of the next pipeline. -->
+        {{ "au-there" | humanize | len | add 2 | eq 12}}
+        {{eq 12 12}}
+        {{12 | eq 1}}
+        <main role="main" class="mt-6">
+          {{ block "main" . }}
+          {{ end }}
+        </main>
+      </div>
     </div>
   </body>
 </html>

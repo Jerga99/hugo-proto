@@ -1,10 +1,15 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var selectThemeItemElem = document.querySelectorAll('.select-theme--item');
+    var rootEleme = document.getElementById('root');
 
     selectThemeItemElem.forEach(function (element, i) {
-      element.addEventListener("click", function() {
-        alert("Clicked!");
+      element.addEventListener("click", function(e) {
+        const themeType = e.target.text.trim().toLowerCase();
+        localStorage.setItem('theme', themeType);
+
+        rootEleme.removeAttribute('class');
+        rootEleme.classList.add(themeType);
       })
     })
   })
