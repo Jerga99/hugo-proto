@@ -2,9 +2,9 @@
 Themes - Dark | Light
 
 
-Archetypes
 deployment
 
+Archetypes -> DONE
 404 -> DONE
 Shortcodes -> DONE
 Data Templates -> DONE

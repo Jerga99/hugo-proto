@@ -17,6 +17,19 @@
         <a class="navbar-item" href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>
       {{end}}
     </div>
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        Theme
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item select-theme--item">
+          Light
+        </a>
+        <a class="navbar-item select-theme--item">
+          Dark
+        </a>
+      </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
