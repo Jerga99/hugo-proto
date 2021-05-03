@@ -14,13 +14,13 @@
       <!-- Term: {{ (printf "/%s" $taxonomy_term) }} -->
       <!-- Get a page of given type -->
       {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
-        <div class="tag is-large">
-          <a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+        <div class="tag has-theme is-large">
+          <a class="" href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
         </div>
         {{ range $key, $value := $taxonomy }}
           <div>
             {{$url := absURL (printf "%s/%s" $taxonomy_term $key)}}
-            <a class="button is-text" href="{{$url}}">{{$key | humanize}}</a>
+            <a class="button has-theme" href="{{$url}}">{{$key | humanize}}</a>
           </div>
         {{ end }}
       {{ end }}

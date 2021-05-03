@@ -23,15 +23,15 @@
 
     {{ $currentPage := index $paginator.Pages ($paginator.PageNumber)}}
 
-    <nav class="pagination" role="navigation" aria-label="pagination">
+    <nav class="" role="navigation" aria-label="pagination">
       <a
         href="{{$prevUrl}}"
-        class="pagination-previous {{ if not $paginator.HasPrev }}disabled{{ end }}">
+        class="pagination-previous button has-theme {{ if not $paginator.HasPrev }}disabled{{ end }}">
         Previous
       </a>
       <a
         href="{{$nextUrl}}"
-        class="pagination-next {{ if not $paginator.HasNext }}disabled{{ end }}">
+        class="pagination-next button has-theme {{ if not $paginator.HasNext }}disabled{{ end }}">
         Next page
       </a>
     </nav>
