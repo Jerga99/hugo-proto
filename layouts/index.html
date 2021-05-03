@@ -6,7 +6,7 @@
 {{ range .Site.AllPages}}
   Kind: {{ .Kind }} --- Type {{ .Type }}
   <div>
-    <a href="{{.Permalink}}">{{.Permalink}}</a>
+    <a href="{{.RelPermalink}}">{{.Permalink}}</a>
   </div>
 {{end}}
 <div>{{.Site.Author}}</div>
