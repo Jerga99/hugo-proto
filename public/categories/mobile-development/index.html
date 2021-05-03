@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    const themes = {
+      "light" : {
+        bgColor: "#f5f5f5"
+      },
+      "dark": {
+        bgColor: "#363636"
+      }
+    }
+
+    const selectThemeItemElem = document.querySelectorAll('.select-theme--item');
+    const navbar = document.getElementsByClassName("navbar")[0];
+    const body = document.getElementsByTagName("body")[0];
+    const rootEleme = document.getElementById('root');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      const themeItems = document.getElementsByClassName("has-theme");
+
+      rootEleme.classList.add("theme__" + currentTheme);
+      navbar.classList.add("is-" + currentTheme);
+      body.style.backgroundColor = themes[currentTheme].bgColor;
+
+      for (let item of themeItems) {
+        item.classList.add("is-" + currentTheme);
+      }
+    }
+
+    selectThemeItemElem.forEach(function (element, i) {
+      element.addEventListener("click", function(e) {
+        const themeType = e.target.text.trim().toLowerCase();
+        localStorage.setItem('theme', themeType);
+        location.reload();
+      })
+    })
+  })
+</script>
+
+    <meta name="description" content="" />
+<link rel="canonical" href="http://example.org/categories/mobile-development/">
+<link rel="icon" href="/favicon.jpg" sizes="any" type="image/png" />
+
+
+
+
+
+
+<meta property="og:site_name" content="Filips Blogs">
+<meta property="og:title" content="mobile development">
+<meta property="og:url" content="http://example.org/categories/mobile-development/">
+<meta property="og:type" content="website">
+<meta property="og:description" content="">
+
+
+
+    
+<link rel="stylesheet" href="http://example.org/css/bulma.min.css">
+
+
+
+
+<link rel="stylesheet" href="http://example.org/css/main.min.css">
+
+
+    <link rel="alternate" type="application/rss+xml" href="http://example.org/categories/mobile-development/index.xml" title="Filips Blogs" />
+    </head>
+
+  <body>
+    <div id="root">
+      <div class="container is-max-desktop">
+        
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      
+        <a class="navbar-item" href="/about">About</a>
+      
+        <a class="navbar-item" href="/faq">Faq</a>
+      
+        <a class="navbar-item" href="/blogs">Blogs</a>
+      
+    </div>
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        Theme
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item select-theme--item">
+          Light
+        </a>
+        <a class="navbar-item select-theme--item">
+          Dark
+        </a>
+      </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        
+        false
+        true
+        false
+        <main role="main" class="mt-6">
+          
+	<span class="tag is-large is-link mb-4">
+		mobile development [categories]
+	</span>
+	
+<div class="columns is-multiline">
+  
+  <div class="column is-8">
+    
+      <div class="columns">
+        <div class="column">
+          <div class="blog-item">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Filip Jerga</strong> <small>@fjerga</small> <small>31m</small>
+        </p>
+      </div>
+    </div>
+  </article>
+  <div class="title">My Forth Blog Title</div>
+  <div class="subtitle mb-2">My Forth Blog Subtitle</div>
+  <a href="http://example.org/blogs/my-forth-blog/" class="button is-link">Discover More</a>
+</div>
+
+        </div>
+      </div>
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    <nav class="" role="navigation" aria-label="pagination">
+      <a
+        href="/categories/mobile-development/"
+        class="pagination-previous button has-theme disabled">
+        Previous
+      </a>
+      <a
+        href="/categories/mobile-development/"
+        class="pagination-next button has-theme disabled">
+        Next page
+      </a>
+    </nav>
+
+  </div>
+  <div class="column is-2 is-offset-2">
+    <section>
+  
+  
+  
+  
+  
+  
+
+  <ul id="all-taxonomies">
+    
+      
+      
+      
+        <div class="tag has-theme is-large">
+          <a class="" href="http://example.org/categories/">categories</a>
+        </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/categories/mobile-development">Mobile development</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/categories/web-development">Web development</a>
+          </div>
+        
+      
+    
+      
+      
+      
+        <div class="tag has-theme is-large">
+          <a class="" href="http://example.org/series/">series</a>
+        </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/series/how-to-implement-this">How to implement this</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/series/jamstack">Jamstack</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/series/ssr-frameworks">Ssr frameworks</a>
+          </div>
+        
+      
+    
+      
+      
+      
+        <div class="tag has-theme is-large">
+          <a class="" href="http://example.org/tags/">tags</a>
+        </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/development">Development</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/gatsby">Gatsby</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/js">Js</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/next">Next</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/programming">Programming</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/react">React</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/swift">Swift</a>
+          </div>
+        
+          <div>
+            
+            <a class="button has-theme" href="http://example.org/tags/web-dev">Web dev</a>
+          </div>
+        
+      
+    
+  </ul>
+</section>
+
+
+
+  </div>
+</div>
+
+
+
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

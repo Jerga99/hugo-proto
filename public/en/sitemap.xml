@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://example.org/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://example.org/fr/blogs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/blogs/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://example.org/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/development/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/faq/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/gatsby/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/series/how-to-implement-this/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/series/jamstack/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/js/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/mobile-development/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/branch-post/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/branch-post/branch-content1/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/my-first-blog/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/my-forth-blog/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/leaf-post/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/my-second.blog/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blogs/my-third-blog/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/next/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/programming/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/react/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/series/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://example.org/fr/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/series/ssr-frameworks/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/swift/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://example.org/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/web-development/</loc>
+    <lastmod>2021-04-22T09:24:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tests/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/web-dev/</loc>
+  </url>
+  
+</urlset>

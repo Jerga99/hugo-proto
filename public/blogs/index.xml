@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>All Blogs on Filips Blogs</title>
+    <link>http://example.org/blogs/</link>
+    <description>Recent content in All Blogs on Filips Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Apr 2021 09:24:38 +0100</lastBuildDate><atom:link href="http://example.org/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog Title</title>
+      <link>http://example.org/blogs/my-first-blog/</link>
+      <pubDate>Thu, 22 Apr 2021 09:24:38 +0100</pubDate>
+      
+      <guid>http://example.org/blogs/my-first-blog/</guid>
+      <description>Filipooo @Filipooo 31m  Hello World nanan               Chapter 0 — Resources Full Course: Electron &amp;amp; React JS: Build Native Chat App with Javascript
+Youtube Guide: https://youtu.be/VCl8li22mrA
+Github Repo: https://github.com/Jerga99/electron-react-boilerplate
+Chapter 1 — What is Electron JS? In short? Electron js is a framework for creating native applications with web technologies like Javascript, Html &amp;amp; CSS.</description>
+    </item>
+    
+    <item>
+      <title>My Forth Blog Title</title>
+      <link>http://example.org/blogs/my-forth-blog/</link>
+      <pubDate>Thu, 22 Apr 2021 09:24:38 +0100</pubDate>
+      
+      <guid>http://example.org/blogs/my-forth-blog/</guid>
+      <description>command: hugo new posts/my-first-post.md
+Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.</description>
+    </item>
+    
+    <item>
+      <title>My Leaf Blog Title</title>
+      <link>http://example.org/blogs/leaf-post/</link>
+      <pubDate>Thu, 22 Apr 2021 09:24:38 +0100</pubDate>
+      
+      <guid>http://example.org/blogs/leaf-post/</guid>
+      <description>Nananananannaannananananananana</description>
+    </item>
+    
+    <item>
+      <title>My Second Blog Title</title>
+      <link>http://example.org/blogs/my-second.blog/</link>
+      <pubDate>Thu, 22 Apr 2021 09:24:38 +0100</pubDate>
+      
+      <guid>http://example.org/blogs/my-second.blog/</guid>
+      <description>Table of contents: · A bit of web apps history: swinging back and forth · How to consume the data on Next.js — getStaticProps &amp;amp; the SSG approach — getServerSideProps &amp;amp; the SSR on-demand approach — Extra benefit of server-side functions — Dynamic routes &amp;amp; getStaticPaths function · Bonus: Serverless functions · Demo app · Conclusion
+Resources Full Next JS Course: https://academy.eincode.com/next.js
+A bit of web apps history: swinging back and forth In the old times, the apps’ core was on the back end, running on PHP, Ruby, etc.</description>
+    </item>
+    
+    <item>
+      <title>My Third Blog Title</title>
+      <link>http://example.org/blogs/my-third-blog/</link>
+      <pubDate>Thu, 22 Apr 2021 09:24:38 +0100</pubDate>
+      
+      <guid>http://example.org/blogs/my-third-blog/</guid>
+      <description>command: hugo new posts/my-first-post.md
+Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.</description>
+    </item>
+    
+  </channel>
+</rss>

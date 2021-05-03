@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    const themes = {
+      "light" : {
+        bgColor: "#f5f5f5"
+      },
+      "dark": {
+        bgColor: "#363636"
+      }
+    }
+
+    const selectThemeItemElem = document.querySelectorAll('.select-theme--item');
+    const navbar = document.getElementsByClassName("navbar")[0];
+    const body = document.getElementsByTagName("body")[0];
+    const rootEleme = document.getElementById('root');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      const themeItems = document.getElementsByClassName("has-theme");
+
+      rootEleme.classList.add("theme__" + currentTheme);
+      navbar.classList.add("is-" + currentTheme);
+      body.style.backgroundColor = themes[currentTheme].bgColor;
+
+      for (let item of themeItems) {
+        item.classList.add("is-" + currentTheme);
+      }
+    }
+
+    selectThemeItemElem.forEach(function (element, i) {
+      element.addEventListener("click", function(e) {
+        const themeType = e.target.text.trim().toLowerCase();
+        localStorage.setItem('theme', themeType);
+        location.reload();
+      })
+    })
+  })
+</script>
+
+    <meta name="description" content="" />
+<link rel="canonical" href="http://example.org/blogs/my-first-blog/">
+<link rel="icon" href="/favicon.jpg" sizes="any" type="image/png" />
+
+
+
+  <meta name="keywords" content="js,gatsby,development,programming">
+
+
+
+  <meta name="author" content="Filip Jerga">
+  <meta property="article:author" content="http://example.org/@Filip Jerga">
+
+
+<meta property="og:site_name" content="Filips Blogs">
+<meta property="og:title" content="My First Blog Title">
+<meta property="og:url" content="http://example.org/blogs/my-first-blog/">
+<meta property="og:type" content="article">
+<meta property="og:description" content="">
+
+  <meta property="og:image" content="http://example.org/images/gatsby.jpg">
+  <meta property="og:image:url" content="http://example.org/images/gatsby.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:app:name:iphone" content="Filips Blogs">
+  <meta property="twitter:title" content="My First Blog Title">
+  <meta property="twitter:description" content="">
+
+
+
+    
+<link rel="stylesheet" href="http://example.org/css/bulma.min.css">
+
+
+
+
+<link rel="stylesheet" href="http://example.org/css/main.min.css">
+
+
+    </head>
+
+  <body>
+    <div id="root">
+      <div class="container is-max-desktop">
+        
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      
+        <a class="navbar-item" href="/about">About</a>
+      
+        <a class="navbar-item" href="/faq">Faq</a>
+      
+        <a class="navbar-item" href="/blogs">Blogs</a>
+      
+    </div>
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        Theme
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item select-theme--item">
+          Light
+        </a>
+        <a class="navbar-item select-theme--item">
+          Dark
+        </a>
+      </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        
+        false
+        true
+        false
+        <main role="main" class="mt-6">
+          
+<div class="blog-detail-page">
+  <div class="blog-detail-header">
+  <div class="is-flex is-flex-direction-row is-justify-content-space-between mb-2">
+    <div class="is-flex">
+      <div>
+        
+        <figure class="image is-64x64 mr-2">
+          <img
+            src="/images/filip.jpg"
+            class="is-rounded"
+            alt="avatar"/>
+        </figure>
+      </div>
+      <div class="is-flex is-flex-direction-column is-justify-content-center">
+        <div class="blog-author">Filip Jerga</div>
+        <div class="blog-date">Thursday, Apr 22, 2021</div>
+      </div>
+    </div>
+  </div>
+  <h1 class="font-weight-bold blog-detail-header-title mb-0">My First Blog Title</h1>
+  <h2 class="blog-detail-header-subtitle font-weight-bold mb-5">My First Blog Subtitle</h2>
+    
+    <img
+      class="img-fluid rounded"
+      src="/images/gatsby.jpg" alt="TODO: provide alt"
+    />
+</div>
+
+</div>
+<div class="blog-content">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-0--resources">Chapter 0 — Resources</a></li>
+    <li><a href="#chapter-1--what-is-electron-js">Chapter 1 — What is Electron JS?</a>
+      <ul>
+        <li><a href="#so-how-does-it-work"><strong>So how does it work?</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter-2-browser-window">Chapter 2— Browser Window</a></li>
+    <li><a href="#chapter-3-is-this-web-app">Chapter 3— Is this Web App?</a>
+      <ul>
+        <li><a href="#so-is-this-web-app">So is this web app?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  <article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        
+        <strong> Filipooo</strong> <small>@Filipooo</small> <small>31m</small>
+        <br>
+        
+  <span>
+      Hello World nanan
+  </span>
+
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-reply"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-heart"></i></span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="media-right">
+    <button class="delete"></button>
+  </div>
+</article>
+
+<h2 id="chapter-0--resources">Chapter 0 — Resources</h2>
+<p>Full Course: <a href="https://academy.eincode.com/courses/electron-react-js-build-native-chat-app-with-javascript">Electron &amp; React JS: Build Native Chat App with Javascript</a></p>
+<p>Youtube Guide: <a href="https://youtu.be/VCl8li22mrA">https://youtu.be/VCl8li22mrA</a></p>
+<p>Github Repo: <a href="https://github.com/Jerga99/electron-react-boilerplate">https://github.com/Jerga99/electron-react-boilerplate</a></p>
+<h2 id="chapter-1--what-is-electron-js">Chapter 1 — What is Electron JS?</h2>
+<p>In short? Electron js is a framework for creating native applications with web technologies like Javascript, Html &amp; CSS. Yes, you hear right, you can use Html to create awesome native applications that can run across multiple platforms like macOS, Windows, and Linux.</p>
+<p>Many popular applications like Visual Studio Code, Slack, Discord, Twitch, WhatsApp are created in Electron.</p>
+<h3 id="so-how-does-it-work"><strong>So how does it work?</strong></h3>
+<p>First, open your coding editors and get ready for programming. Let’s create a very simple application. We will start with coding and then we will look at the theoretic part.</p>
+<ol>
+<li>
+<p>Create an empty folder for your application</p>
+</li>
+<li>
+<p>initialize npm inside of this folder, run: <code>npm init -y</code></p>
+</li>
+<li>
+<p>install electron, run: <code>npm install --save-dev electron</code></p>
+</li>
+<li>
+<p>specify start script in <strong>package.json</strong> to: <code>&quot;start&quot;: electron .</code></p>
+</li>
+<li>
+<p>upon running <code>npm start</code> Electron will try to run the file specified in the <code>main</code> option of package.json</p>
+</li>
+<li>
+<p>specify <code>&quot;main&quot;: main.js</code></p>
+</li>
+<li>
+<p>create <code>main.js</code> with the following content : <code>console.log(&quot;Hello World&quot;);</code></p>
+<p>{
+&ldquo;name&rdquo;: &ldquo;your-electron-app&rdquo;,
+&ldquo;version&rdquo;: &ldquo;1.0.0&rdquo;,
+&ldquo;description&rdquo;: &ldquo;&rdquo;,
+&ldquo;main&rdquo;: &ldquo;main.js&rdquo;,
+&ldquo;devDependencies&rdquo;: {
+&ldquo;electron&rdquo;: &ldquo;^10.1.2&rdquo;,
+},
+&ldquo;scripts&rdquo;: {
+&ldquo;start&rdquo;: &ldquo;electron .&rdquo;,
+},
+&ldquo;author&rdquo;: &ldquo;&rdquo;,
+&ldquo;license&rdquo;: &ldquo;ISC&rdquo;
+}package.json</p>
+<p>console.log(&ldquo;Hello World&rdquo;);
+main.js</p>
+</li>
+</ol>
+<p>On <code>npm start</code> electron will run <code>main.js</code> file, you should see “Hello World” in the terminal console. Interesting thing is that application will keep running and will be loaded in the memory of your computer. It’s up to the user to shut it down.</p>
+<p>Now we need to create a graphical user interface(GUI) to interact with our application. For this, we will use pure Html and JS.</p>
+<h2 id="chapter-2-browser-window">Chapter 2— Browser Window</h2>
+<p>In Electron we recognize 2 main processes. <strong>Main</strong> and <strong>Renderer</strong> process. The process which runs <strong>package.json</strong>’s <code>main.js</code> script is the main process.</p>
+<p>The main process can create a GUI in the form of a web page. Each “web page” runs it’s own renderer process.</p>
+<p>Did I use the term “web page”? Yes, Electron is built on top of the same source code as Google Chrome browser called <strong>Chromium</strong>.</p>
+<p>Again, let’s code a simple browser window, and then we will get into an explanation.</p>
+<p>Open <code>main.js</code> file, and type the following code:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">BrowserWindow</span>, <span style="color:#a6e22e">app</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;electron&#39;</span>);
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createWindow</span>() {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">win</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">BrowserWindow</span>({
+    <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1200</span>,
+    <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
+    <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;white&#34;</span>,
+    <span style="color:#a6e22e">webPreferences</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">nodeIntegration</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+      <span style="color:#a6e22e">worldSafeExecuteJavaScript</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+      <span style="color:#a6e22e">contextIsolation</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+    }
+  })
+
+  <span style="color:#a6e22e">win</span>.<span style="color:#a6e22e">loadFile</span>(<span style="color:#e6db74">&#39;index.html&#39;</span>)
+}
+
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">whenReady</span>().<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">createWindow</span>);
+</code></pre></div></p>
+<p>Function <code>createWindow</code> will create browser window 1200x800px with white background.</p>
+<p>Normally you would be able to access Electron and Node API in the rendered process(Browser Window) but by writing <code>nodeIntegration: false</code> we are disabling it. It’s considered a good security practice. We will access these APIs differently.</p>
+<blockquote>
+<p>In normal browsers, web pages usually run in a sandboxed environment and are not allowed access to native resources. Electron users, however, have the power to use Node.js APIs in web pages allowing lower level operating system interactions.</p>
+</blockquote>
+<p>After the browser window is initialized it tries to run <strong>index.html</strong> file.</p>
+<p><code>createWindow</code> function is executed when Promise of <code>app.whenReady</code> is resolved. This will happen as soon as Electron is fully initialized.</p>
+<p>The last thing missing is <code>index.html</code> file. Let’s create one:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;script-src 'self'&quot; /&gt;
+    &lt;title&gt;Electron Chat&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id =&quot;root&quot;&gt;
+      &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;index.html
+</code></pre>
+<p>Just standard Html displaying <strong>Hello world</strong>.</p>
+<p>Now let’s run <code>npm start</code> and this is what you should see:</p>
+<!-- raw HTML omitted -->
+<p>Congrats, you have just created a native application with the use of pure Html and JS.</p>
+<h2 id="chapter-3-is-this-web-app">Chapter 3— Is this Web App?</h2>
+<p>How do you access a normal web page? You will open Google Chrome or other browser and type a URL of a web page you want to visit.</p>
+<p>Let’s say we are visiting <strong>medium.com.</strong> The browser will make a request to <strong>medium.com</strong> server, after some time you will receive a response from the server with an Html document and usually a bunch of JS, CSS files…</p>
+<p>The browser will take all of this content and render it on the screen and <strong>Medium</strong> application is displayed.</p>
+<p>Electron is utilizing all of these steps into one. First, the application is running locally on your computer, the same as Google Chrome. Upon running Electron app, a browser window is created with the content of Html, JS &amp; CSS we have specified to load beforehand.</p>
+<p>Same as Google Chrome browser can run natively on your computer, Electron app can do the same.</p>
+<!-- raw HTML omitted -->
+<p>Chrome and Electron have a lot of in common.</p>
+<p>Chromium is a web engine for rendering the UI — in other words, a full Chrome-like web browser.</p>
+<p>Chromium can parse HTML, create DOM tree, render the view, and all of this fancy stuff. That’s why we can use HTML in Electron.</p>
+<p>V8 is the name of the JavaScript engine that powers Google Chrome. It’s the thing that takes our JavaScript and executes it while browsing with Chrome.</p>
+<p>Electron application is using Node.js and Node.js is internally using V8 engine. That’s the reason why we can use JS in Electron application + thanks to Node we can access the lower API of our operating system, which is not allowed on a typical web page.</p>
+<h3 id="so-is-this-web-app">So is this web app?</h3>
+<p>No, but it’s very very similar. What you are creating in Electron is a native application that uses web technologies(Html, JS, CSS …) with the ability to access “lower” operating system interactions (ability to access a file system, power state changes of a computer, and much more…).</p>
+<p>You can create any native application not much different from applications you are using on your computers in your daily life.</p>
+<p>That’s it from this part of the tutorial. In the next part, I will show you how to integrate React Library into your Electron app.</p>
+<p>If Electron is something that interests you then feel free to check my full course:</p>
+<p>Full Course: <a href="https://academy.eincode.com/courses/electron-react-js-build-native-chat-app-with-javascript">Electron &amp; React JS: Build Native Chat App with Javascript</a></p>
+<p>Youtube Guide: <a href="https://youtu.be/VCl8li22mrA">https://youtu.be/VCl8li22mrA</a></p>
+<p>Github Repo: <a href="https://github.com/Jerga99/electron-react-boilerplate">https://github.com/Jerga99/electron-react-boilerplate</a></p>
+<p>Have a nice day!</p>
+<p>Cheers,</p>
+<p>Filip</p>
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+</div>
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
